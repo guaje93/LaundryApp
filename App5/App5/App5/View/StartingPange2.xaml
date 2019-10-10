@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App3.View.StartingPange2">
+    
+        <!--<ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>-->
+
+    <Grid BackgroundColor="#FFF">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="30"/>
+        </Grid.ColumnDefinitions>
+
+        <!--<Image Source="starting_img.png" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"/>-->
+
+        <Button Text="Login" Style="{StaticResource button}" Command="{Binding GoToLoginPage}" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3" />
+        <Button Text="Register" Style="{StaticResource button}" Command="{Binding GoToRegisterPage}"  Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" />
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App3.View.EditProfilePage">
+
+    <StackLayout  VerticalOptions="Center" Margin="30,0,30,0">
+        
+        <StackLayout Spacing="30">
+            <StackLayout Orientation="Horizontal">
+            <Entry Placeholder="Name" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Update" Style="{StaticResource updateButton}"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Surname" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Update"  Style="{StaticResource updateButton}"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="Room" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Update"  Style="{StaticResource updateButton}"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry  Placeholder="Email" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Update"  Style="{StaticResource updateButton}"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry  Placeholder="Password" IsPassword="True" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Update"  Style="{StaticResource updateButton}"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Entry  Placeholder="Confirm Password" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Update"  Style="{StaticResource updateButton}"/>
+            </StackLayout>
+
+            <Button Text="Register"  Style="{StaticResource button}" TextColor="White" BorderRadius="25"/>
+
+         </StackLayout>
+    </StackLayout>
+
+
+</ContentPage>

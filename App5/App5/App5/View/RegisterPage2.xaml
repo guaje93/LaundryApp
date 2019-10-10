@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App3.View.RegisterPage2">
+    <!--<ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>-->
+
+    <StackLayout  VerticalOptions="Center" Margin="30,0,30,0">
+        <StackLayout Spacing="30">
+            <Entry Placeholder="Name" Text="{Binding Path = UserFirstName, Mode=TwoWay}" />
+            <Entry Placeholder="Surname" Text="{Binding Path = UserLastName, Mode=TwoWay}"/>
+            <Entry Placeholder="Room" Text="{Binding Path = UserRoom, Mode=TwoWay}"/>
+            <Entry  Placeholder="Email" Text="{Binding Path = UserEmail, Mode=TwoWay}"/>
+            <Entry  Placeholder="Password" IsPassword="True" Text="{Binding Path = UserPassword, Mode=TwoWay}"/>
+            <Entry  Placeholder="Confirm Password" Text="{Binding Path = UserConfirmPassword, Mode=TwoWay}"/>
+            <Button Text="Register" BackgroundColor="#963484" Command="{Binding GoToInformationPage, Mode=TwoWay}" TextColor="White" BorderRadius="25"/>
+        </StackLayout>
+    </StackLayout>
+
+
+</ContentPage>

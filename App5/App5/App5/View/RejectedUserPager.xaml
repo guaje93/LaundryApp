@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App3.View.RejectedUserPager">
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+        <StackLayout Orientation="Vertical" VerticalOptions="Center">
+            <Label Text="Your request was rejected" TextColor="#ac8daf" FontSize="20" FontAttributes="Bold" />
+            
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                <Label Text="Please contact Florman"/>
+                <Label Text="and ask for acceptation"/>
+                <Button Margin="0,20,0,0" TextColor="#484c7f" BackgroundColor="#f1d4d4" BorderRadius="25"   Text="Ask for permission"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </StackLayout>
+
+
+</ContentPage>

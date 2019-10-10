@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App3.View.InformationPage2">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Spacing="10">
+            <Label HorizontalOptions="Center" FontSize="20" Text="Current reservation:"/>
+            <Label  TextColor="#963484" FontSize="25" Text="1205" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" Margin="0,50,0,0">
+            <Label HorizontalOptions="Center" FontSize="20" Text="Nearest available date:"/>
+            <StackLayout Orientation="Vertical">
+                <Label HorizontalOptions="Center" TextColor="#963484" FontSize="25" Text="12/05/1205"/>
+                <Label HorizontalOptions="Center" TextColor="#963484" FontSize="25" Text="12:00- 16:00"/>
+            </StackLayout>
+            <Button Margin="0,50,0,0" TextColor="White" Text="Reserve" 
+                    BackgroundColor="#963484" BorderRadius="25"/>
+        </StackLayout>
+
+        <StackLayout>
+            <Button Margin="0,30,0,0" BackgroundColor="#6092FF" Text="Go to Calendar" BorderRadius="25" />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
